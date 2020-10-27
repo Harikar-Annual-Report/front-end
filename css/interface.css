@@ -22,24 +22,29 @@
     }
 
     .pagedjs_pages {
+        border: 2px solid red;
         display: flex;
-        width: calc(var(--pagedjs-width) * 2);
+        /* width: calc(var(--pagedjs-width) * 2); */ 
         flex: 0;
         flex-wrap: wrap;
+        justify-content: center;
         margin: 0 auto;
     }
 
     .pagedjs_page {
+        border: 5px solid orange;
         background-color: var(--color-paper);
-        box-shadow: 0 0 0 1px var(--color-pageSheet);
-        margin: 0;
-        flex-shrink: 0;
-        flex-grow: 0;
+        /* box-shadow: 0 0 0 1px var(--color-pageSheet); */
+        margin: 0 auto;
+        /* flex-shrink: 0; */
+        /* flex-grow: 0; */
         margin-top: 10mm;
     }
 
     .pagedjs_first_page {
-        margin-left: var(--pagedjs-width);
+        /* margin-left: var(--pagedjs-width); */
+        margin: 0 auto;
+        border: 5px solid blue;
     }
 
     .pagedjs_page:last-of-type {
